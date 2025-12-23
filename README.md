@@ -35,8 +35,6 @@ The application allows users to manage daily tasks with basic CRUD operations an
 ```bash
 npm install -g @quasar/cli
 
----
-
 ## Install dependencies
 npm install
 

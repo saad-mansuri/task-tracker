@@ -1,43 +1,44 @@
-# Quasar App (quasar-project)
+# Task Master – Task Management App
 
-A Quasar Project
+Task Master is a simple task management application built using **Quasar Framework (Vue 3)** and **Pinia**.  
+The application allows users to manage daily tasks with basic CRUD operations and filtering.
 
-## Install the dependencies
+---
+
+## Features
+
+- Add new tasks
+- Edit existing tasks
+- Mark tasks as completed or pending
+- Filter tasks (All / Completed / Pending)
+- Delete individual tasks
+- Clear all tasks
+- Persistent storage using browser LocalStorage
+
+---
+
+## Tech Stack
+
+- Quasar Framework (Vue 3)
+- Pinia (State Management)
+- TypeScript
+- LocalStorage
+
+---
+
+## Prerequisites
+
+- Node.js v18 or above (v22.21.1)
+- Npm (10.9.4)
+- Quasar CLI installed globally
 
 ```bash
-yarn
-# or
+npm install -g @quasar/cli
+
+---
+
+## Install dependencies
 npm install
-```
 
-### Start the app in development mode (hot-code reloading, error reporting, etc.)
-
-```bash
+## Run the application
 quasar dev
-```
-
-### Lint the files
-
-```bash
-yarn lint
-# or
-npm run lint
-```
-
-### Format the files
-
-```bash
-yarn format
-# or
-npm run format
-```
-
-### Build the app for production
-
-```bash
-quasar build
-```
-
-### Customize the configuration
-
-See [Configuring quasar.config.js](https://v2.quasar.dev/quasar-cli-vite/quasar-config-js).

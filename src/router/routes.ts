@@ -4,11 +4,15 @@ const routes: RouteRecordRaw[] = [
   {
     path: '/',
     component: () => import('layouts/MainLayout.vue'),
-    children: [{ path: '', component: () => import('pages/IndexPage.vue') }],
+    children: [
+      { path: '', component: () => import('pages/IndexPage.vue') }, // ALL
+      { path: 'completed', component: () => import('pages/IndexPage.vue') },
+      { path: 'pending', component: () => import('pages/IndexPage.vue') },
+      { path: 'add', component: () => import('pages/AddTaskPage.vue') },
+      { path: 'edit/:id', component: () => import('pages/EditTaskPage.vue') },
+    ],
   },
 
-  // Always leave this as last one,
-  // but you can also remove it
   {
     path: '/:catchAll(.*)*',
     component: () => import('pages/ErrorNotFound.vue'),
